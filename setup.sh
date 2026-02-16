@@ -2,7 +2,7 @@
 
 pip install gdown
 
-SAM2_BUILD_ALLOW_ERRORS=0 pip install -v -e ".[notebooks]"
+SAM2_BUILD_ALLOW_ERRORS=0 pip install -v -e ".[dev]"
 
 mkdir datasets
 cd datasets

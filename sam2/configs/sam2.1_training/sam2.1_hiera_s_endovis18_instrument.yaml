@@ -2,14 +2,14 @@
 
 scratch:
   resolution: 512
-  train_batch_size: 4
-  num_train_workers: 8
+  train_batch_size: 2
+  num_train_workers: 4
   num_frames: 8
   max_num_objects: 3
   base_lr: 5.0e-5
   vision_lr: 5.0e-5
   phases_per_epoch: 1
-  num_epochs: 30
+  num_epochs: 10
   freeze_image_encoder: False
 
 launcher:
@@ -19,8 +19,8 @@ launcher:
 
 dataset:
   # PATHS to Dataset
-  img_folder: ./data/Ref-Endovis18/train/JPEGImages
-  gt_folder: ./data/Ref-Endovis18/train/Annotations
+  img_folder: ./datasets/VOS-Endovis18/train/JPEGImages
+  gt_folder: ./datasets/VOS-Endovis18/train/Annotations
   file_list_txt: null
   multiplier: 1
   frame_sampling_mult_ratio: 1
