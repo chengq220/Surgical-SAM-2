@@ -22,6 +22,8 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 # Required dependencies
 REQUIRED_PACKAGES = [
+    "torch>=2.5.1",
+    "torchvision>=0.20.1",
     "numpy>=1.24.4",
     "tqdm>=4.66.1",
     "hydra-core>=1.3.2",
@@ -36,17 +38,17 @@ EXTRA_PACKAGES = {
         "opencv-python>=4.7.0",
         "eva-decord>=0.6.1",
     ],
-    # "interactive-demo": [
-    #     "Flask>=3.0.3",
-    #     "Flask-Cors>=5.0.0",
-    #     "av>=13.0.0",
-    #     "dataclasses-json>=0.6.7",
-    #     "eva-decord>=0.6.1",
-    #     "gunicorn>=23.0.0",
-    #     "imagesize>=1.4.1",
-    #     "pycocotools>=2.0.8",
-    #     "strawberry-graphql>=0.243.0",
-    # ],
+    "interactive-demo": [
+        "Flask>=3.0.3",
+        "Flask-Cors>=5.0.0",
+        "av>=13.0.0",
+        "dataclasses-json>=0.6.7",
+        "eva-decord>=0.6.1",
+        "gunicorn>=23.0.0",
+        "imagesize>=1.4.1",
+        "pycocotools>=2.0.8",
+        "strawberry-graphql>=0.243.0",
+    ],
     "dev": [
         "black==24.2.0",
         "usort==1.0.2",
