@@ -4,7 +4,6 @@ pip install gdown
 
 SAM2_BUILD_ALLOW_ERRORS=0 pip install -v -e ".[notebooks]"
 
-mkdir datasets
 cd datasets
 mkdir endovis2017
 cd endovis2017
